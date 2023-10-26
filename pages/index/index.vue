@@ -4,6 +4,7 @@
 		<view class="text-area">
 			<text class="title">{{title}}</text>
 		</view>
+		<ant-button type="default" @tap="handleTap">次要按钮</ant-button>
 	</view>
 </template>
 
@@ -18,7 +19,9 @@
 
 		},
 		methods: {
-
+			handleTap: function() {
+				console.log('this is handle tap');
+			}
 		}
 	}
 </script>
